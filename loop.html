@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <head> 
     <title>MENU</title> 
+    <script>
+        var order = prompt("Do you want Blueberry or Strawberry?");
+        while(order !== "Blueberry" && order !== "Strawberry")
+        {
+            order = prompt("Do you want Blueberry or Strawberry?")
+        }
+        var itemOrder = '';
+        if(order == "Blueberry")
+        {
+            itemOrder = '<img src="blue.jpg"/>'; 
+        }
+        else if(order == "Strawberry")
+
+    {
+        itemOrder = '<img src="Straw.jpg"/>' 
+
+    }
+    var numofpieces = prompt("what is the number of pieces?");
+    var result = '';
+    for(var i= 0; i<numofpieces; i++)
+    {
+        result = result + itemOrder;
+    }
+    document.write(result); 
+    </script>
+
 </head>
 <body>
     <header>
@@ -27,24 +53,6 @@
         </ul>
     </main>
     <footer>
-        <script> 
-            console.log('Welcome to Cheescake Factory')
-            var fname = 'Batoul';
-            console.log('my name is:' + fname);
-            var Age = 25;
-            console.log('Iam' , Age , 'years old');
-            console.log('my name is:'  , fname ,  'and'  ,  'Iam' , Age  ,  'years old')
-            var custumer = true
-            console.log('custumer:' ,custumer) 
-            var adress = 'Amman'
-            var adreess = prompt('Where do you live?')
-            console.log(adress)
-            if (custumer == true) {
-                console.log('you can order now')
-            } else {
-                console.log('log in befor order')
-            }
-            </script>
         &COPY; Cheese Cake Factory by Tasnim , Farah and Btool.
     </footer>
 </body>
