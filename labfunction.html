@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head> 
+    <title>MENU</title> 
+    <script>
+        var order = prompt("Do you want Blueberry or Strawberry?");
+        while(order !== "Blueberry" && order !== "Strawberry")
+        {
+            order = prompt("Do you want Blueberry or Strawberry?")
+        }
+        var itemOrder = '';
+        if(order == "Blueberry")
+        {
+            itemOrder = '<img src="blue.jpg"/>'; 
+        }
+        else if(order == "Strawberry")
+
+    {
+        itemOrder = '<img src="Straw.jpg"/>' 
+
+    }
+    var numofpieces = prompt("what is the number of pieces?");
+    var result = '';
+    for(var i= 0; i<numofpieces; i++)
+    {
+        result = result + itemOrder;
+    }
+    document.write(result); 
+
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> 
+                <li> <a href="https://tasnimwheebi.github.io/demo/">  
+                    Home
+                </a>
+             </li>
+                <li> <a href="https://farahalwahaibi.github.io/demo/">
+                         About us 
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Fruit Cheesecake </h1>
+        <img src="https://b.zmtcdn.com/data/menus/525/10901525/fe81a6f41610edeab39ce5fc8b597be6.jpg" alt="Fruit Cheesecake Menu">
+
+<h1>Try our delicious recipes</h1>
+        <img src="https://i.ytimg.com/vi/ZYoYffXWiwk/maxresdefault.jpg" alt="Try our delicious recipes">
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <script>
+        var yourlocation=prompt ('enter you location');
+        function printWelcome(location) 
+        { 
+            alert('welcome '+ location) 
+        }
+        
+        printWelcome (yourlocation);
+        </script>
+        &COPY; Cheese Cake Factory by Tasnim , Farah and Btool.
+    </footer>
+</body>
